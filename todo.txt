@@ -1,28 +1,28 @@
 ---- Part 1 ----
 
 ok | isalpha
-ok | isdigit
-ok | isalnum
-ok | isascii
-ok | isprint
-ok | strlen
-ok | memset
-ok | bzero
-memcpy
-memmove
-strlcpy
-strlcat
-toupper
-tolower
-strchr
-strrchr
-strncmp
-memchr
-memcmp
-strnstr
-atoi
-calloc
-strdup
+ok | ft_isdigit
+ok | ft_isalnum
+ok | ft_isascii
+ok | ft_isprint
+ok | ft_strlen
+ok | ft_memset
+ok | ft_bzero
+ft_memcpy
+ft_memmove
+ft_strlcpy
+ft_strlcat
+ok | toupper
+ok | tolower
+ft_strchr
+ft_strrchr
+ft_strncmp
+ft_memchr
+ft_memcmp
+ft_strnstr
+ft_atoi
+ft_calloc
+ft_strdup
 
 ----- Part 2 -----
 
