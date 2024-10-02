@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ciso <marvin@42lausanne.ch>                +#+  +:+       +#+        */
+/*   By: smonte-e <smonte-e@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/02 17:25:52 by ciso              #+#    #+#             */
-/*   Updated: 2024/10/02 17:57:59 by ciso             ###   ########.fr       */
+/*   Updated: 2024/10/02 22:20:10 by smonte-e         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,4 +21,5 @@ int	 ft_strlen(char *str)
 	
 	while(str[i])
 		i++;
+	return (i);
 }
