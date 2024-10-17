@@ -8,8 +8,8 @@ ok | ft_isprint
 ok | ft_strlen
 ok | ft_memset
 ok | ft_bzero
-ft_memcpy
-ft_memmove
+ok | ft_memcpy
+ok | ft_memmove
 ft_strlcpy
 ft_strlcat
 ok | toupper
