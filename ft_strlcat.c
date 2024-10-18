@@ -1,31 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_strlcat.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ciso <marvin@42lausanne.ch>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/17 17:03:27 by ciso              #+#    #+#             */
-/*   Updated: 2024/10/17 17:03:32 by ciso             ###   ########.fr       */
+/*   Created: 2024/10/17 17:08:27 by ciso              #+#    #+#             */
+/*   Updated: 2024/10/17 17:57:54 by ciso             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <libft.h>
 
-#include "libft.h"
+size_t	strlcat(char *dst, const char *src, size_t size);
 
-void *ft_memset(void *b, int c, size_t len)
 {
-	int		i;
-	char	*buff;
+	int	c;
+	int	i;
 
+	c = 0;
 	i = 0;
-	buff = b;
-
-	while (i < len)
+	while (dest[c] != '\0')
 	{
-		buff[i] = c;
+		c++;
+	}
+	while (c < size)
+	{
+		dest[c] = src[i];
+		c++;
 		i++;
 	}
-	return (buff);
+	dest[c] = '\0';
+	return (c);
 }
 
+}

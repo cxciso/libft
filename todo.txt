@@ -10,17 +10,17 @@ ok | ft_memset
 ok | ft_bzero
 ok | ft_memcpy
 ok | ft_memmove
-ft_strlcpy
-ft_strlcat
+ok | ft_strlcpy
+ok | ft_strlcat
 ok | toupper
 ok | tolower
-ft_strchr
-ft_strrchr
-ft_strncmp
+ok | ft_strchr
+ok | ft_strrchr
+ok | ft_strncmp
 ft_memchr
 ft_memcmp
 ft_strnstr
-ft_atoi
+ok | ft_atoi
 ft_calloc
 ft_strdup
 

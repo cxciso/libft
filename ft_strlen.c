@@ -3,16 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: smonte-e <smonte-e@student.42lausanne.c    +#+  +:+       +#+        */
+/*   By: ciso <marvin@42lausanne.ch>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/02 17:25:52 by ciso              #+#    #+#             */
-/*   Updated: 2024/10/02 22:20:10 by smonte-e         ###   ########.fr       */
+/*   Created: 2024/10/17 17:02:31 by ciso              #+#    #+#             */
+/*   Updated: 2024/10/17 17:03:00 by ciso             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
 #include "libft.h"
-#include <stdlib.h>
+
 
 int	 ft_strlen(char *str)
 {

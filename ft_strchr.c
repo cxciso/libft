@@ -1,31 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_strchr.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ciso <marvin@42lausanne.ch>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/17 17:03:27 by ciso              #+#    #+#             */
-/*   Updated: 2024/10/17 17:03:32 by ciso             ###   ########.fr       */
+/*   Created: 2024/10/17 17:59:58 by ciso              #+#    #+#             */
+/*   Updated: 2024/10/18 15:29:08 by ciso             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <libft.h>
 
-#include "libft.h"
-
-void *ft_memset(void *b, int c, size_t len)
+char *ft_strchr(const char *s, int c)
 {
-	int		i;
-	char	*buff;
+	int	i;
+	i = 0; 
 
-	i = 0;
-	buff = b;
-
-	while (i < len)
+	while (s[i] && s[i] != c)
 	{
-		buff[i] = c;
-		i++;
+		i++; 
 	}
-	return (buff);
+	if (s[i] == c) 
+	{
+		return ((char*)s);
+	}
+	return ((char*)NULL); 
 }
-
