@@ -17,9 +17,9 @@ ok | tolower
 ok | ft_strchr
 ok | ft_strrchr
 ok | ft_strncmp
-ft_memchr
-ft_memcmp
-ft_strnstr
+ok | ft_memchr
+ok | ft_memcmp
+ok | ft_strnstr
 ok | ft_atoi
 ft_calloc
 ft_strdup
