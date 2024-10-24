@@ -21,8 +21,8 @@ ok | ft_memchr
 ok | ft_memcmp
 ok | ft_strnstr
 ok | ft_atoi
-ft_calloc
-ft_strdup
+ok | ft_calloc
+ok | ft_strdup
 
 ----- Part 2 -----
 

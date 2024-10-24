@@ -1,26 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ciso <marvin@42lausanne.ch>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/17 19:48:38 by ciso              #+#    #+#             */
-/*   Updated: 2024/10/22 17:36:30 by ciso             ###   ########.fr       */
+/*   Created: 2024/10/22 14:38:52 by ciso              #+#    #+#             */
+/*   Updated: 2024/10/22 14:59:06 by ciso             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h" 
 
-void ft_putstr_fd(char *s, int fd)
+void	*ft_calloc(size_t count, size_t size)
 {
-   	int i;
+	size_t total;
 	
-	i = 0;
-	while(s[i])
+	total = count * size;
+	
+	void *ptr = malloc(total);
+	if (ptr == NULL)
 	{
-		write(fd, &s[i], 1);
-		i++; 
-	} 
+		return NULL;
+	}
+	ft_bzero(ptr, total);
+	return ptr; 
 
 }
