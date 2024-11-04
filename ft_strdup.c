@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ciso <marvin@42lausanne.ch>                +#+  +:+       +#+        */
+/*   By: ciso <ciso@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 15:34:24 by ciso              #+#    #+#             */
-/*   Updated: 2024/10/22 17:05:44 by ciso             ###   ########.fr       */
+/*   Updated: 2024/11/04 16:02:15 by ciso             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h" 
+#include "libft.h"
 
- char *ft_strdup(const char *s1)
+char	*ft_strdup(const char *s1)
 {
 	int		i;
 	char	*dest;
@@ -31,4 +31,3 @@
 	dest[i] = '\0';
 	return (dest);
 }
-

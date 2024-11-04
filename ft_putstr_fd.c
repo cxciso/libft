@@ -3,24 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ciso <marvin@42lausanne.ch>                +#+  +:+       +#+        */
+/*   By: ciso <ciso@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 19:48:38 by ciso              #+#    #+#             */
-/*   Updated: 2024/10/22 17:36:30 by ciso             ###   ########.fr       */
+/*   Updated: 2024/11/04 16:01:17 by ciso             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h" 
+#include "libft.h"
 
-void ft_putstr_fd(char *s, int fd)
+void	ft_putstr_fd(char *s, int fd)
 {
-   	int i;
-	
+	int	i;
+
 	i = 0;
-	while(s[i])
+	while (s[i])
 	{
 		write(fd, &s[i], 1);
-		i++; 
-	} 
-
+		i++;
+	}
 }

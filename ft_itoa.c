@@ -1,42 +1,45 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_itoa.c                                             :+:      :+:    :+:   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ciso <marvin@42lausanne.ch>                +#+  +:+       +#+        */
+/*   By: ciso <ciso@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 14:29:42 by ciso              #+#    #+#             */
-/*   Updated: 2024/10/29 16:02:07 by ciso             ###   ########.fr       */
+/*   Updated: 2024/11/04 15:49:13 by ciso             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-int	 count(int n)
+
+#include "libft.h"
+
+int	count(int n)
 {
-	int i;
+	int	i;
 
 	i = 0;
-	
 	if (n == 0)
-		return(1);
+		return (1);
 	if (n < 0)
 		i++;
 	while (n != 0)
 	{
 		n = n / 10;
-		i++; 
+		i++;
 	}
-	return(i); 
+	return (i);
 }
-char		*ft_itoa(int num)
+
+char	*ft_itoa(int num)
 {
-	int size; 
-	char *str; 
-	int neg; 
+	int		size;
+	char	*str;
+	int		neg;
 
 	size = count(num);
-	str = (char *)malloc(size + 1); 
-	neg = 0; 
+	str = (char *)malloc(size + 1);
+	neg = 0;
 	if (!str)
-		return NULL;
+		return (NULL);
 	str[size] = '\0';
 	if (num < 0)
 	{
@@ -50,10 +53,6 @@ char		*ft_itoa(int num)
 		size--;
 	}
 	if (neg)
-	{
-		str[0] ='-';
-	}
-	
-	return str; 
-} 
-
+		str[0] = '-';
+	return (str);
+}

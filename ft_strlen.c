@@ -3,22 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ciso <marvin@42lausanne.ch>                +#+  +:+       +#+        */
+/*   By: ciso <ciso@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 17:02:31 by ciso              #+#    #+#             */
-/*   Updated: 2024/10/17 17:03:00 by ciso             ###   ########.fr       */
+/*   Updated: 2024/11/04 16:02:47 by ciso             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-
-int	 ft_strlen(char *str)
+int	ft_strlen(char *str)
 {
 	int	i;
+
 	i = 0;
-	
-	while(str[i])
+	while (str[i])
 		i++;
 	return (i);
 }

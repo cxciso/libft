@@ -1,29 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                           :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ciso <marvin@42lausanne.ch>                +#+  +:+       +#+        */
+/*   By: ciso <ciso@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 17:59:58 by ciso              #+#    #+#             */
-/*   Updated: 2024/10/18 15:29:08 by ciso             ###   ########.fr       */
+/*   Updated: 2024/11/04 16:22:42 by ciso             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
-char *ft_strchr(const char *s, int c)
+char	*ft_strchr(const char *s, int c)
 {
 	int	i;
-	i = 0; 
 
+	i = 0;
 	while (s[i] && s[i] != c)
 	{
-		i++; 
+		i++;
 	}
-	if (s[i] == c) 
+	if (s[i] == c)
 	{
-		return ((char*)s);
+		return ((char *)s);
 	}
-	return ((char*)NULL); 
+	return ((char *) NULL);
 }

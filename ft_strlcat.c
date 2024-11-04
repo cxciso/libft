@@ -1,19 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                          :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ciso <marvin@42lausanne.ch>                +#+  +:+       +#+        */
+/*   By: ciso <ciso@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 17:08:27 by ciso              #+#    #+#             */
-/*   Updated: 2024/10/17 17:57:54 by ciso             ###   ########.fr       */
+/*   Updated: 2024/11/04 16:25:58 by ciso             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
-size_t	strlcat(char *dst, const char *src, size_t size);
-
+size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
 	int	c;
 	int	i;
@@ -34,4 +33,6 @@ size_t	strlcat(char *dst, const char *src, size_t size);
 	return (c);
 }
 
+{
+	return (size_t());
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ciso <marvin@42lausanne.ch>                +#+  +:+       +#+        */
+/*   By: ciso <ciso@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 20:01:06 by ciso              #+#    #+#             */
-/*   Updated: 2024/11/03 20:13:24 by ciso             ###   ########.fr       */
+/*   Updated: 2024/11/04 16:02:23 by ciso             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	int		i;
-	int 	j;
+	int		j;
 	char	*result;
 
 	result = (char *)malloc(sizeof(s1 + s2) + 1);

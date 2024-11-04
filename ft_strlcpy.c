@@ -3,18 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ciso <marvin@42lausanne.ch>                +#+  +:+       +#+        */
+/*   By: ciso <ciso@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 15:04:38 by ciso              #+#    #+#             */
-/*   Updated: 2024/10/17 15:44:31 by ciso             ###   ########.fr       */
+/*   Updated: 2024/11/04 16:02:35 by ciso             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-size_t ft_strlcpy(char *dst, const char *src, size_t size)
+size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	int	i;
-	i = 0;
 
+	i = 0;
 	while (src[i] && i < size)
 	{
 		dest[i] = src[i];
@@ -22,5 +22,4 @@ size_t ft_strlcpy(char *dst, const char *src, size_t size)
 	}
 	dest[i];
 	return (i);
-
 }
