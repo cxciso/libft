@@ -6,7 +6,7 @@
 /*   By: ciso <ciso@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/18 16:27:09 by ciso              #+#    #+#             */
-/*   Updated: 2024/11/04 15:36:45 by ciso             ###   ########.fr       */
+/*   Updated: 2024/11/09 16:27:34 by ciso             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	i = 0;
 	while (i < n)
 	{
-		if (((char *)s)[i] == c)
-			return (&((char *)s)[i]);
+		if (((unsigned char *)s)[i] == (unsigned char)c)
+			return (&((unsigned char *)s)[i]);
 		i++;
 	}
 	return (NULL);

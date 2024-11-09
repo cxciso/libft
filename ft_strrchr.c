@@ -6,7 +6,7 @@
 /*   By: ciso <ciso@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/18 11:43:51 by ciso              #+#    #+#             */
-/*   Updated: 2024/11/09 15:39:59 by ciso             ###   ########.fr       */
+/*   Updated: 2024/11/09 16:32:49 by ciso             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strrchr(const char *str, int c)
 	lst = NULL;
 	while (str[i] != '\0')
 	{
-		if ((int)str[i] == c)
+		if (str[i] == (char)c)
 			lst = (char *)&str[i];
 		i++;
 	}

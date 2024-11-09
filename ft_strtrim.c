@@ -6,7 +6,7 @@
 /*   By: ciso <ciso@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 21:21:13 by ciso              #+#    #+#             */
-/*   Updated: 2024/11/07 16:13:26 by ciso             ###   ########.fr       */
+/*   Updated: 2024/11/09 16:36:43 by ciso             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 
 	if (!s1 || !set)
 		return (NULL);
+	if (*s1 == '\0')
+		return (ft_strdup(""));
 	i = 0;
 	while (s1[i] && in_set(s1[i], set))
 		i++;
