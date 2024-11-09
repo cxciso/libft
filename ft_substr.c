@@ -6,7 +6,7 @@
 /*   By: ciso <ciso@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 21:08:34 by ciso              #+#    #+#             */
-/*   Updated: 2024/11/09 16:58:16 by ciso             ###   ########.fr       */
+/*   Updated: 2024/11/09 17:11:08 by ciso             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 	i = 0;
 	j = 0;
+	if (len > ft_strlen((char *)s))
+		len = ft_strlen((char *)s);
 	result = (char *)malloc(sizeof(char) * (len + 1));
 	if (!result || !s)
 		return (NULL);
