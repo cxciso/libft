@@ -6,7 +6,7 @@
 /*   By: ciso <ciso@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 14:29:42 by ciso              #+#    #+#             */
-/*   Updated: 2024/11/04 15:49:13 by ciso             ###   ########.fr       */
+/*   Updated: 2024/11/07 16:09:44 by ciso             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,26 +33,26 @@ char	*ft_itoa(int num)
 {
 	int		size;
 	char	*str;
-	int		neg;
 
+	if (num == -2147483648)
+		return (ft_strdup("-2147483648"));
+	if (num == 0)
+		return (ft_strdup("0"));
 	size = count(num);
 	str = (char *)malloc(size + 1);
-	neg = 0;
 	if (!str)
 		return (NULL);
 	str[size] = '\0';
 	if (num < 0)
 	{
-		neg = 1;
 		num = -num;
+		str[0] = '-';
 	}
-	while (size > 0)
+	while ((size > 0 && (num != 0 || str[size - 1] == '0')))
 	{
 		str[size - 1] = (num % 10) + '0';
 		num = num / 10;
 		size--;
 	}
-	if (neg)
-		str[0] = '-';
 	return (str);
 }

@@ -6,9 +6,11 @@
 /*   By: ciso <ciso@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 21:21:13 by ciso              #+#    #+#             */
-/*   Updated: 2024/11/04 16:36:12 by ciso             ###   ########.fr       */
+/*   Updated: 2024/11/07 16:13:26 by ciso             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 static int	in_set(char c, const char *set)
 {
@@ -16,21 +18,25 @@ static int	in_set(char c, const char *set)
 	{
 		if (c == *set)
 			return (1);
+		set++;
 	}
-	set++;
 	return (0);
 }
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	int	len;
 	int	i;
 	int	end;
 
+	if (!s1 || !set)
+		return (NULL);
+	i = 0;
 	while (s1[i] && in_set(s1[i], set))
 		i++;
-	end = ft_strlen(s1) - 1;
+	end = ft_strlen((char *)s1) - 1;
 	while (in_set(s1[end], set))
 		end--;
+	if (end < i)
+		return (ft_strdup(""));
 	return (ft_substr(s1, i, end - i + 1));
 }

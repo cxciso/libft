@@ -6,7 +6,7 @@
 /*   By: ciso <ciso@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 17:08:27 by ciso              #+#    #+#             */
-/*   Updated: 2024/11/04 16:25:58 by ciso             ###   ########.fr       */
+/*   Updated: 2024/11/06 16:42:16 by ciso             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,18 +17,15 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	unsigned int	c;
 	unsigned int	i;
 
-	c = 0;
+	c = ft_strlen(dst);
 	i = 0;
-	while (dst[c] != '\0')
+	if (size <= c)
+		return (size + ft_strlen((char *)src));
+	while (c + i < size - 1 && src[i])
 	{
-		c++;
-	}
-	while (c < size)
-	{
-		dst[c] = src[i];
-		c++;
+		dst[c + i] = src[i];
 		i++;
 	}
-	dst[c] = '\0';
-	return (c);
+	dst[c + i] = '\0';
+	return (c + ft_strlen((char *)src));
 }

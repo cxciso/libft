@@ -6,13 +6,13 @@
 /*   By: ciso <ciso@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 15:34:24 by ciso              #+#    #+#             */
-/*   Updated: 2024/11/04 16:02:15 by ciso             ###   ########.fr       */
+/*   Updated: 2024/11/06 19:59:25 by ciso             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup(const char *s1)
+char	*ft_strdup(char *s1)
 {
 	int		i;
 	char	*dest;

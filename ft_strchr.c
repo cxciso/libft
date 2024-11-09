@@ -6,7 +6,7 @@
 /*   By: ciso <ciso@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 17:59:58 by ciso              #+#    #+#             */
-/*   Updated: 2024/11/04 16:22:42 by ciso             ###   ########.fr       */
+/*   Updated: 2024/11/06 16:55:04 by ciso             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,13 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	int	i;
-
-	i = 0;
-	while (s[i] && s[i] != c)
+	while (*s)
 	{
-		i++;
+		if (*s == (char)c)
+			return ((char *)s);
+		s++;
 	}
-	if (s[i] == c)
-	{
+	if ((char)c == '\0')
 		return ((char *)s);
-	}
-	return ((char *) NULL);
+	return (0);
 }
