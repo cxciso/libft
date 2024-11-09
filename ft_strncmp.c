@@ -6,13 +6,13 @@
 /*   By: ciso <ciso@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/18 15:54:51 by ciso              #+#    #+#             */
-/*   Updated: 2024/11/07 18:36:17 by ciso             ###   ########.fr       */
+/*   Updated: 2024/11/09 17:26:09 by ciso             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	strncmp(const char *s1, const char *s2, size_t n)
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	unsigned int	i;
 
